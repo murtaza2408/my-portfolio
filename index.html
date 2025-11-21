@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murtaza Khan Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5em;
+        }
+
+        nav {
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1e90ff;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #1e90ff;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        /* Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Skills */
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .skill {
+            background: linear-gradient(135deg, #ff7f50, #ff6347);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: default;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1e90ff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00bfff;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e90ff;
+            color: white;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5em; }
+            header p { font-size: 1.2em; }
+        }
+
+        @media (max-width: 500px) {
+            nav ul { flex-direction: column; gap: 15px; }
+            .card-container { flex-direction: column; align-items: center; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Murtaza Khan</h1>
+        <p>Aspiring Web Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Murtaza Khan, an aspiring web developer passionate about building modern,
+            responsive, and visually appealing websites. I enjoy learning new technologies and applying
+            them in practice. My current skills include HTML, CSS, C#, PHP, Bootstrap, WordPress, and
+            Canva. I strive to improve continuously, create real-world projects, and enhance user
+            experiences through clean and efficient code.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C#</div>
+            <div class="skill">PHP (Basic)</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">WordPress</div>
+            <div class="skill">Canva</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Matriculation</h3>
+                <p>School Name: Your School Name</p>
+                <p>Year: 2025</p>
+            </div>
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>College Name: GCT</p>
+                <p>Year: 2027</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Freelancing</h3>
+                <p>Learning and building web development projects. Gaining practical experience and improving frontend skills by creating websites and practicing new technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150.png?text=Project+1" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>This is a practice project created to improve my frontend skills.</p>
+                <a href="#contact" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150.png?text=Project+2" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>This is a practice project created to improve my frontend skills.</p>
+                <a href="#contact" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150.png?text=Project+3" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>This is a practice project created to improve my frontend skills.</p>
+                <a href="#contact" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150.png?text=Project+4" alt="Project 4">
+                <h3>Project 4</h3>
+                <p>This is a practice project created to improve my frontend skills.</p>
+                <a href="#contact" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150.png?text=Project+5" alt="Project 5">
+                <h3>Project 5</h3>
+                <p>This is a practice project created to improve my frontend skills.</p>
+                <a href="#contact" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Email</h3>
+                <p>murtaza2408b@aptechsite.net</p>
+            </div>
+            <div class="card">
+                <h3>Phone</h3>
+                <p>0300-2077669</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Murtaza Khan</p>
+    </footer>
+
+</body>
+</html>
